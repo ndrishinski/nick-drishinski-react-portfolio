@@ -1,10 +1,12 @@
 import React from 'react';
 
+import PortfolioContainer from '../portfolio/portfolio-container';
+
 class Home extends React.Component {
     render() {
         return (
             <div>
-                Hme
+                 <PortfolioContainer />
             </div>
         )
     }

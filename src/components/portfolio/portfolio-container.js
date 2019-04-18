@@ -9,15 +9,18 @@ export default class PortfolioContainer extends React.Component {
             portfolioTitle: 'Welcome to my portfolio page',
             data: [{
                 title: 'Jimmy',
-                category: 'Father'
+                category: 'Father',
+                slug: 'father'
             },
             {
                 title: 'Hedda',
-                category: 'Mother'
+                category: 'Mother',
+                slug: 'mother'
             },
             {
                 title: 'Emilie',
-                category: 'Wife'
+                category: 'Wife',
+                slug: 'wife'
             }
         ]
         }
@@ -35,7 +38,7 @@ export default class PortfolioContainer extends React.Component {
     portfolioItems() {
 
         return this.state.data.map(item => {
-            return <PortfolioItem name={item.title} />
+            return <PortfolioItem name={item.title} category={item.category} slug={item.slug} />
         })
     }
     
